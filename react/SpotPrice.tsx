@@ -34,7 +34,7 @@ function SpotPrice({
   message = messages.default.id,
   markers = [],
   classes,
-  alwaysShow = false,
+  alwaysShow = true,
 }: Props) {
   const { handles, withModifiers } = useCssHandles(CSS_HANDLES, { classes })
   const productContextValue = useProduct()
@@ -56,7 +56,7 @@ function SpotPrice({
   const spotPriceValue = commercialOffer.spotPrice
   const sellingPriceValue = commercialOffer.SellingPrice
 
-  if (spotPriceValue === sellingPriceValue) {
+  if (spotPriceValue == sellingPriceValue) {
     return null
   }
 

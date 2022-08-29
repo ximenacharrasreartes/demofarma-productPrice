@@ -7,6 +7,7 @@ import { IOMessageWithMarkers } from 'vtex.native-types'
 
 import { getDefaultSeller } from './modules/seller'
 import { hideProductPrice } from './modules/hideProductPrice'
+import SellingPrice from './SellingPrice'
 
 const CSS_HANDLES = [
   'listPrice',
@@ -79,6 +80,11 @@ function ListPrice({
   const hasUnitMultiplier = unitMultiplier !== 1
 
   if (listPriceValue <= sellingPriceValue) {
+    return null
+
+  }
+
+  if (SellingPrice <= 0) {
     return null
   }
 
