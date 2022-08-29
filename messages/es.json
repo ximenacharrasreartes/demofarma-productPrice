@@ -1,9 +1,9 @@
 {
   "store/list-price.default": "{listPriceValue}",
   "store/selling-price.default": "{sellingPriceValue}",
-  "store/spot-price.default": "Precio al contado: {listPriceValue}",
-  "store/spot-price-savings.default": "Ahorros de precio al contado: {spotPriceSavingsValue}",
-  "store/savings.default": "Pago en destino {savingsValue}",
+  "store/spot-price.default": "Precio al contado: {spotPriceValue}",
+  "store/spot-price-savings.default": "Importe a abonar en punto de retiro: {spotPriceSavingsValue}",
+  "store/savings.default": "Pago en retiro {savingsValue}",
   "store/installments.default": "Hasta {installmentsNumber}x {installmentValue}{hasInterest, select, true {, {interestRate} de interés} false { sin interés}}",
   "store/list-price-range-message.default": "{minPriceValue} - {maxPriceValue}",
   "store/list-price-range-no-range-message.default": "{listPriceValue}",
